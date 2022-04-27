@@ -1,0 +1,25 @@
+---
+// src/layouts/Base.astro
+import Head from "../components/Head.astro";
+const {title} = Astro.props;
+
+---
+<html lang="da">
+<head>
+    <Head title={title}/>
+</head>
+<body>
+
+  <header>
+    <h1>Markdown reduced example of duplicate content when using HTML</h1>
+  </header>
+
+  <main>
+
+    <slot />
+
+  </main>
+
+</body>
+</html>
+
